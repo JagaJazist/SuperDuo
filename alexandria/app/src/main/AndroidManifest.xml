@@ -8,6 +8,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
 
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -31,6 +32,14 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <activity
+            android:label="@string/Barcode_activity_title"
+            android:name=".barcodereader.BarcodeCaptureActivity"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
 
         <provider
